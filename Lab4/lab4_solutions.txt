@@ -1,0 +1,16 @@
+
+1. I used the background-color css rule, and the #id selector to specify div1
+
+2. Margin changes the position and spacing of the boxes (adjusts the spacing outside the border). Padding changes the spacing inside the border (making the boxes larger in this case).
+
+3. As the margin for <p> increases is get smaller and both <p> and the margin try to fit within the box, if the margin is >100px then <p> is forced out of the box and has an apparent size of 0 (text is present, but no yellow). As padding inreases, <p> itself (and therefore the yellow area) increases. If padding >100px then it's again forced out of the box but <p> is large.
+
+4. The scroll overflow allows you to scroll within the div element to view the contents. Hidden simply hides the area of <p> that exceeds the boudnary of the box.
+
+5. With float left there now arranged in ascending order, horizontally, left to right starting in the upper left hand corner. With float right the are arranged in ascending order, horizontally, right to left, starting in the upper right hand corner.
+
+6. This changes which boxes apear horizontall arranged and which are vertically arranged.
+
+7. All divs: float: left, div3: float:left and clear: left
+
+8. yes the boxes, shift to the upper left, looks like the default margin is a few pixels.

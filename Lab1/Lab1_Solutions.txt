@@ -1,0 +1,46 @@
+Lab1 Solutions
+by Derek Thomas
+
+3. The hidden file is ".secrets.txt", I used ls -a to find it
+
+4. "Eyhafjalljokull_volcano.jpg" is the largest file, I used the ls -Slhr
+
+5. I used mkdir to create the directory, and cp pictures/Eyhafjalljokull_volcano.jpg and cp texts/dracula.txt to makea copy of the files. The resulting directory is 8.4M and I used the du -sh * command to determin the disk usage.
+
+6. zip -r bigData.zip, resulting zip file is 7.8M
+
+7. tar -cvf bigData.tar, resulting tar file is 8.4M
+
+8. rm bigData.zip, rm -rf bigData, -r is recursive, -f forces deletion
+
+9. tar -xf, -x is extract, -f is from file instead of /tape
+
+10. little2 is a zipped folder, little1 contains only files
+
+11. find . -name "target.txt", .Mystery/32/target.txt, /Users/derekthomas/Projects/CSCI3308/Lab1/Mystery/32/target.txt
+
+12. {head -n 5 dracula.txt; tail -n 5 frankenstein.txt} > new_story.txt
+
+Step 5:
+
+1) sort -t ':' -k1 password_demo.txt
+
+2) sort -n -t ':' -k3 password_demo.txt
+
+3) sort -t ':' -k4 -k3 -g password_demo.txt
+
+4) grep -i 'daemon' password_demo.txt
+
+5) wc -l password_demo.txt
+
+6) sort -n -t ':' -k4 password_demo.txt | uniq -u
+
+7) sort -n -t ':' -k4 password_demo.txt | uniq -u > tmp
+
+8) ./getUniqueGID.sh
+    yes
+    chmod +x getUniqueGID.sh
+    yes
+
+
+

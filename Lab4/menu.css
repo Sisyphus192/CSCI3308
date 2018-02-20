@@ -1,0 +1,24 @@
+
+div {
+    float: left;
+}
+
+#menu {
+    border: 2px solid black;
+    width: 20%;
+}
+
+#menu p {
+    border: 2px solid black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 0px;
+    padding: 10px;
+}
+
+#info {
+    width: 70%;
+    margin: 10px;
+    
+}

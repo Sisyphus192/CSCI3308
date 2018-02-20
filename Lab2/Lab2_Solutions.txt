@@ -1,0 +1,50 @@
+Derek Thomas Lab 2 Solutions
+
+Step 2:
+1) Which "fruits" have been added to or removed from fruits_v1.txt to get to fruits_v2.txt:
+    Cranberry
+    Jackfruit
+    Nectarine
+    Prickly Pear
+
+2) What do the '>' or '<' character mean at the beginning of each line in the output of diff?
+    Lines preceded by a < are lines from the first file
+    Lines preceded by a > are lines from the second file
+
+3) What does the -c option do?
+    Provides context to the differences, showing a few lines before and after the difference. The number of lines shown default to 3 but can be specified.
+
+Step 3:
+1) wc -l password_demo.txt
+    There are 15 lines
+2) wc -m password_demo.txt
+    There are 692 characters
+
+Step 4:
+1) cut -d ":" -f 1 password_demo.txt
+2) cut -d " " -f 2,4 grades.txt
+
+Step 5:
+1) cut -d ":" -f 4 password_demo.txt | sort -g | uniq
+2) cut -d ":" -f 4 password_demo.txt | sort -g | uniq > ~/output.txt
+3) cut -d ":" -f 1,6 password_demo.txt | grep '^[mws]'
+
+Step 6:
+1.1) sed 's/[[:alpha:]]//g' cryptic.txt
+1.2) sed 's/[[:digit:]]//g' cryptic.txt
+1.3) sed 's/[[:digit:]]/_/g' cryptic.txt
+2) sed 's/4/a/g' cryptic.txt | sed 's/5/s/g' | sed 's/0/o/g' | sed 's/3/e/g' | sed 's/7/t/g' | sed 's/1/i/g'
+    without piping: sed 's/4/a/g; s/5/s/g; s/0/o/g; s/3/e/g; s/7/t/g; s/1/i/g' cryptic.txt
+3) sed 's/4/a/g; s/5/s/g; s/0/o/g; s/3/e/g; s/7/t/g; s/1/i/g' $1
+
+Step 7:
+1) awk '{ sum = 0; for (i=3;i<8;i++) sum+=$i; print $1,$2,(sum/5)*100}' grades.txt
+2) awk '{ sum += $3; n++} END {if (n > 0) print sum / n;}' grades.txt
+
+Step 8:
+1) egrep -co '\d{3}-\d{3}-\d{4}$' regex_practice_data.txt
+This assumes that numbers are formated xxx-xxx-xxxx, this appears to be the overwelming majority of phone numbers
+2) egrep -co '^303\-441\-\d{4}$' regex_practice_data.txt
+3) egrep -co '\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}\b' regex_practice_data.txt
+4) egrep '\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.gov\b' regex_practice_data.txt
+
