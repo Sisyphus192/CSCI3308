@@ -1,0 +1,46 @@
+//Derek Thomas
+.pyramid {
+    text-align:center;
+}
+.row {
+    color:white;
+    text-align:center;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.first {
+    margin-left:500px;
+    margin-right:500px;
+    background-color:red;
+}
+
+.second {
+    margin-left:450px;
+    margin-right:450px;
+    background-color:orange;
+}
+
+.third {
+    margin-left:400px;
+    margin-right:400px;
+    background-color:black;
+}
+
+.fourth {
+    margin-left:350px;
+    margin-right:350px;
+    background-color:green;
+}
+
+.fifth {
+    margin-left:300px;
+    margin-right:300px;
+    background-color:blue;
+}
+
+.sixth {
+    margin-left:250px;
+    margin-right:250px;
+    background-color:purple;
+}

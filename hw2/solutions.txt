@@ -1,0 +1,7 @@
+Derek Thomas
+
+Q: What are the things needed for Bootstrap to be loaded?
+A: Bootstrap requires the HTML5 Doctype and a div container
+
+Q: How does bootstrap's grid system work?
+A: The bootstrap grid system works by creating 12 columns withing a container. Items can then be placed in the  columns or into groups of columns. This allows for very flexible layouts while maintaining a "clean" look by making it very easy to line up items both horizonatlly and vertically.
